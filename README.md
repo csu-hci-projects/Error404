@@ -1,6 +1,6 @@
 # Virtual Spatial Awareness Navigation Through the use of Waypoints
 
-##How to run: 
+## How to run: 
 
 - Open Unity and create a new project using unity version 2021.2.0f1
 - Install git if not already done 
