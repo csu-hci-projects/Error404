@@ -7,4 +7,7 @@
 - Copy the URL of this repo
 - Open a commandline terminal 
 - Clone this repo into the source file of the new Unity project
-- As of right now, no assets are too large to not be included in this repo, but updates will be made if they are too large in the future. 
+- Click the play icon at the top of the screen
+
+
+As of right now, no assets are too large to not be included in this repo, but updates will be made if they are too large in the future. 
