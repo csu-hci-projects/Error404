@@ -12,5 +12,5 @@
 
 As of right now, no assets are too large to not be included in this repo, but updates will be made if they are too large in the future. 
 
-*Please Note*
- Testing of cloning this repo has not happened yet, and may not work. This is what the steps are believed to be at the time of writing
+***Please Note:***
+Testing of cloning this repo has not happened yet, and may not work. This is what the steps are believed to be at the time of writing
