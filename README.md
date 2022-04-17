@@ -1,5 +1,7 @@
 # Virtual Spatial Awareness Navigation Through the use of Waypoints
 
+This project is developed using Unity and can be run using any VR headset that is tethered to a PC. The purpose of this experiment is to test if human memory is sufficient for navigating virtual worlds, or if a waypoint and compass system will help. 
+
 ## How to run: 
 
 - Open Unity and create a new project using unity version 2021.2.0f1
