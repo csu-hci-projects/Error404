@@ -2,6 +2,9 @@
 {
 	using UnityEngine;
 	using UnityEngine.Events;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
 
 	[ExecuteInEditMode]
 	public class WaypointController : MonoBehaviour
@@ -29,8 +32,11 @@
 		private Transform waypointArrow; //Transform used to reference the Waypoint Arrow
 		private Transform currentWaypoint; //Transforms used to identify the Waypoint Arrow's target
 		private Transform arrowTarget;
+    	public float currTime;
+		public float totalTime;
 
 		void Start () {
+			currTime = 0;
 			if(Application.isPlaying){
 				GameObject newObject = new GameObject();
 				newObject.name = "Arrow Target";
@@ -49,6 +55,8 @@
         }
 
         void Update () {
+			currTime = currTime + Time.deltaTime;
+			totalTime= totalTime + Time.deltaTime;
 			if (configureMode == Switch.Off) {
 				TotalWaypoints = waypointList.Length;
 			}
@@ -75,6 +83,10 @@
 		}
 
 		public void ChangeTarget(){
+			TimeSpan timecurr = TimeSpan.FromSeconds(currTime);
+			TimeSpan timetot = TimeSpan.FromSeconds(totalTime);
+			print(currentWaypoint + " TOTAL TIME: " + timetot.ToString(@"mm\:ss\:fff") + " ||| TIME FROM LAST CP: " + timecurr.ToString(@"mm\:ss\:fff"));
+			currTime = 0;
 			int check = nextWP;
 			if (check < TotalWaypoints) {
 				if (currentWaypoint == null)
@@ -87,6 +99,7 @@
 			if (check == TotalWaypoints) {
 				Destroy (waypointArrow.gameObject);
 				Destroy (gameObject);
+				Application.Quit();
 			}
 		}
 
@@ -148,6 +161,8 @@
 				}
 			}
 		}
+
+
 
 		#if UNITY_EDITOR
 		//Draws a Gizmo in the scene view window to show the Waypoints
