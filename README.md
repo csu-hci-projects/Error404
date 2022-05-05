@@ -9,6 +9,8 @@ This project is developed using Unity and can be run using any VR headset that i
 - Copy the URL of this repo
 - Open a commandline terminal 
 - Clone this repo into the source file of the new Unity project
+- In the XR Rig and Locomotion Settings, Change the speed to 10 to replicate experiment.
+- Speed must be increased to 15 in order for the player to walk onto the parking lot and have time recorded. 
 - Click the play icon at the top of the screen
 
 
