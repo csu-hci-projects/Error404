@@ -14,7 +14,8 @@ This project is developed using Unity and can be run using any VR headset that i
 - Click the play icon at the top of the screen
 
 
-As of right now, no assets are too large to not be included in this repo, but updates will be made if they are too large in the future. 
+As of right now, no assets are too large to not be included in this repo, but updates will be made if they are too large in the future.
 
 ***Please Note:***
+Assets with actual code that were used include the 3rd person waypoint navigator from TurnTheGameOn. Code was modified with original code to implement the Timer algorithms. 
 Testing of cloning this repo has not happened yet, and may not work. This is what the steps are believed to be at the time of writing
